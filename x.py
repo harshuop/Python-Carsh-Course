@@ -83,4 +83,6 @@ mac.battery.get_range()
 mac.battery.upgrade_battery()
 mac.battery.get_range()
 
-print('Thank You!')
+#print('Thank You!')
+#print('Hello World')
+#print("Example")
