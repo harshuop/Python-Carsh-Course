@@ -1,4 +1,6 @@
 /.x.py.swp
 *.swp
-*.pash
-
+*.pash.vscode/
+/key
+key.pub
+/.vscode/
