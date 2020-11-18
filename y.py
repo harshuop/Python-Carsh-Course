@@ -16,8 +16,12 @@ r1 = Robot('Tom', 'red', 30)
 r1.introduceSelf()
 
 
- class Robot(Robot):
-     """This is the baby class of the above class"""
+class RobooT(Robot):
+    """This is the baby class of the above class"""
     
-     def __init___(self, name, color, weight):
-         super().
+    def __init__(self, name, color, weight):
+        super().__init__(name, color, weight)
+
+print('\n')
+r2 = RobooT('Jerry', 'blue', 40)
+r2.introduceSelf()
