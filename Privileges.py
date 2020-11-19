@@ -23,15 +23,15 @@ class User():
 
 class Privileges:
     """This class is only to define the 'privileges' attribute given below"""
-    def __init__(self):
-            self.privilege = []
+    def __init__(self, privileges):
+            self.privilege = privileges
 
     def show_privileges(self):
         """This method will display the display the privileges of the admin"""
         
         print(' Following are the privileges of an admin: ')
-        for privileges in self.privilege:
-            print(' - ' + privileges)
+        for privilegess in self.privilege:
+            print(' - ' + privilegess)
 
 
 class Admin(User):
@@ -40,15 +40,15 @@ class Admin(User):
     def __init__(self,  f_name, l_name, location, age, education):
         super().__init__(f_name, l_name, location, age, education)
 
-        self.privilege = Privileges()
+        self.privilege = Privileges([])
    
 
 mac = Admin('Harshwardhan', 'OP', 'Dehradun', 16, 'In High School')
-mac.privilege.privilege = [
+mac.privilege.privileges = [
     'Can post unlimited posts',
     'No video limit',
     'Can add anyone',
-    'Can remove anyone', 
+    'Can remove anyone',
     'Can contest any compititions'
 ]
 
