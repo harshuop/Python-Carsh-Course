@@ -54,3 +54,5 @@ mac.privilege.privileges = [
 
 mac.describe_user()
 mac.privilege.show_privileges()
+
+# so this is only a minor change in the file
