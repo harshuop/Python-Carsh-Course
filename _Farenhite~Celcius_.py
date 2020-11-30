@@ -10,7 +10,7 @@ sym = in_temp[-1]
 def C_F(sym, temp):
     """This function will change Farenhite to Celius or visa-versa"""
 
-    if sym.upper == 'F':
+    if sym.upper() == 'F':
         F = int(temp)
 
         C = int(F - ((32/9) * 5))
