@@ -4,4 +4,4 @@
 /key
 key.pub
 /.vscode/
-/__pycache__
+__pycache__/*
