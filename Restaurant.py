@@ -1,24 +1,21 @@
-class Restaurant():
-    """A class representing a restaurant."""
+class Restaurant:
+    """This is a class where we are defining a Restaurant"""
 
-    def __init__(self, name, cuisine_type):
-        """Initialize the restaurant."""
-        self.name = name.title()
-        self.cuisine_type = cuisine_type
-
+    def __init__(self, restaurant_name, cuisine_name):
+        self.restaurant_name = restaurant_name.title().replace('_', ' ')
+        self.cuisine_name = cuisine_name.title().replace('_', ' ')
+    
     def describe_restaurant(self):
-        """Display a summary of the restaurant."""
-        msg = self.name + " serves wonderful " + self.cuisine_type + "."
-        print("\n" + msg)
-
+        print('\n')
+        print('Name of Restaurant: ' + self.restaurant_name)
+        print('Cuisine Type available: ' + self.cuisine_name)
+    
     def open_restaurant(self):
-        """Display a message that the restaurant is open."""
-        msg = self.name + " is open. Come on in!"
-        print("\n" + msg)
+        print('\n')
+        print('   Restaurant is open today!')
 
-restaurant = Restaurant('the mean queen', 'pizza')
-print(restaurant.name)
-print(restaurant.cuisine_type)
 
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+RnK = Restaurant('Radha_Krishn', 'italian_pasta')
+
+RnK.describe_restaurant()
+RnK.open_restaurant()
