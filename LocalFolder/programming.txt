@@ -1,0 +1,3 @@
+* This line is added by an command...
+* This is another line!
+* This is an post added line!
