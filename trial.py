@@ -1,23 +1,14 @@
-file = 'LocalFolder/junk.txt'
+def num_div(num1, num2):
+	# sol = float(num1) / float(num2)
+	# print(sol)
+	try:
+		x = (float(num1) / float(num2))
+	except ZeroDivisionError:
+		pass
+	else:
+		print(x)
 
+a = input('What is your first number? ')
+b = input('What is your second number? ')
 
-# Reading and printing the entire file
-print('\nReading and printing the entire file')
-with open(file) as e_file:
-    text = e_file.read()
-
-    print(text.replace('Python', 'C++'))
-
-# Looping over the file objects
-print('\nLooping over the file objects')
-with open(file) as e_file:
-    for text in e_file:
-        print(text.replace('Python', 'C++').rstrip())
-
-# Storing line in a list
-print('\nStoring line in a list')
-with open(file) as e_file:
-    txt = e_file.readlines()
-
-for lines in txt:
-    print(lines.replace('Python', 'C++').rstrip())
+num_div(a, b)
