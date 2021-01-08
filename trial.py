@@ -8,4 +8,3 @@ with open(file_name, "w") as nums:
 
 with open(file_name) as obj:
     print(json.load(obj))
-
