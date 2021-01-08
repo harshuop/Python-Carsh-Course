@@ -1,14 +1,10 @@
-def num_div(num1, num2):
-	# sol = float(num1) / float(num2)
-	# print(sol)
-	try:
-		x = (float(num1) / float(num2))
-	except ZeroDivisionError:
-		pass
-	else:
-		print(x)
+import json
 
-a = input('What is your first number? ')
-b = input('What is your second number? ')
+numbers  = [135,35,235,35,6353,35,"Hello World!"]
+file_name = 'numbers.json'
 
-num_div(a, b)
+with open(file_name, "w") as nums:
+    json.dump(numbers, nums)
+
+with open(file_name) as obj:
+    print(json.load(obj))
